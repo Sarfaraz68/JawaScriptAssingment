@@ -138,15 +138,15 @@ var name1="Asif", name2="Kashif", name3="Zahid";
 // document.write("Value after addition: " + number1+"<br>");
 // number1=--number1;
 // document.write("Value after decreament: " + number1+"<br>");
-// number1=number1%3;
-// document.write("The remainder is: " + number1);
+// // number1=number1%3;
+// // document.write("The remainder is: " + number1);
 
-//Question - 4//
-//var ticketCost = 600;
-//var numberOfTickets=5;
-//var totalCost=ticketCost*numberOfTickets;
-//document.write("Total cost to buy "+numberOfTickets+" tickets to a movie is "+totalCost+"PKR")
-//Question - 5//
+// //Question - 4//
+// //var ticketCost = 600;
+// //var numberOfTickets=5;
+// //var totalCost=ticketCost*numberOfTickets;
+// //document.write("Total cost to buy "+numberOfTickets+" tickets to a movie is "+totalCost+"PKR")
+// //Question - 5//
 // var anyNumber = +prompt("Enter Number....")
 // var anyNumber1=anyNumber*1;
 // var anyNumber2=anyNumber*2;
@@ -251,6 +251,66 @@ var name1="Asif", name2="Kashif", name3="Zahid";
 // var totalSnackForLife = (myMaximumAge-currentAge)*365*amountOfSnackPerDay;
 // document.write("You will need "+totalSnackForLife+" "+myFavoritSnack+" to last you until the ripe old age of "+myMaximumAge+"<br>");
 
+// // Assignment #6//
+
+////Question - 1//
+// var a=10;
+// document.write("Result:"+"<br>");
+// document.write("The value of a is: "+a+"<br>");
+// document.write("-------------------------------"+"<br>"+"<br>");
+// ++a;
+// document.write("The value of ++a is: "+a+"<br>");
+// document.write("Now the value of a is: "+a+"<br>"+"<br>");
+// document.write("The value of a++ is: "+a+"<br>");
+// a++;
+// document.write("Now the value of a is: "+a+"<br>"+"<br>");
+// --a;
+// document.write("The value of --a is: "+a+"<br>");
+// document.write("Now the value of a is: "+a+"<br>"+"<br>");
+// document.write("The value of a-- is: "+a+"<br>");
+// a--;
+// document.write("Now the value of a is: "+a+"<br>"+"<br>");
+
+////Question - 2//
+// var a=2,b=1;
+// document.write("a is "+a+"<br>");
+// document.write("b is "+b+"<br>");
+// var resultValue = --a - --b + ++b + b--;
+// document.write("Result is "+resultValue+"<br>");
+
+////Question - 3//
+
+// // var yourName = prompt("Enter your name please......");
+// // document.write("Welcome "+yourName);
+
+// ////Question - 4//
+// //No questin number 4 in the list
+
+// ////Question - 5//
+
+var anyNumber = +prompt("Enter Number....");
+if(anyNumber===0){anyNumber=5};
+var anyNumber1=anyNumber*1;
+var anyNumber2=anyNumber*2;
+var anyNumber3=anyNumber*3;
+var anyNumber4=anyNumber*4;
+var anyNumber5=anyNumber*5;
+var anyNumber6=anyNumber*6;
+var anyNumber7=anyNumber*7;
+var anyNumber8=anyNumber*8;
+var anyNumber9=anyNumber*9;
+var anyNumber10=anyNumber*10;
+document.write("Table of "+anyNumber+"<br>");
+document.write(anyNumber+"x"+"1"+"="+anyNumber1+"<br>");
+document.write(anyNumber+"x"+"2"+"="+anyNumber2+"<br>");
+document.write(anyNumber+"x"+"3"+"="+anyNumber3+"<br>");
+document.write(anyNumber+"x"+"4"+"="+anyNumber4+"<br>");
+document.write(anyNumber+"x"+"5"+"="+anyNumber5+"<br>");
+document.write(anyNumber+"x"+"6"+"="+anyNumber6+"<br>");
+document.write(anyNumber+"x"+"7"+"="+anyNumber7+"<br>");
+document.write(anyNumber+"x"+"8"+"="+anyNumber8+"<br>");
+document.write(anyNumber+"x"+"9"+"="+anyNumber9+"<br>");
+document.write(anyNumber+"x"+"10"+"="+anyNumber10+"<br>");
 
 
 
