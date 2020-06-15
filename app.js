@@ -27,7 +27,7 @@ var message;
 message="Hello World";
 alert(message);
 
-// //Question - 4//
+//Question - 4//
 var studentName="Jhone Doe";
 var studentAge=15;
 var studentCourse="Certified Mobile Application Development";
@@ -581,3 +581,98 @@ else if(operation1==="%"){
     alert("Result is ...."+per1+"%");
 }
 
+Assignment # 12-13//
+
+Question - 1//
+var singleCharacter = prompt("Enter Single Charachter - Number or String...");
+var valueOfCharacter=singleCharacter.charCodeAt(0);
+if(valueOfCharacter>=65 && valueOfCharacter<=90) { 
+    document.write("It is an Uppercase Alphabate letter..."+singleCharacter);
+}
+else if (valueOfCharacter>=97 && valueOfCharacter<=122){
+        document.write("It is an Lowercase Alphabate letter..."+singleCharacter);
+}
+else if (valueOfCharacter>=48 && valueOfCharacter<=57){
+    document.write("It is a Number..."+singleCharacter);
+}
+
+Questin - 2//
+var firstInteger = +prompt("Enter First Integer......");
+var secondInteger = +prompt("Enter Second Integer......");
+
+if (firstInteger===secondInteger){
+    document.write("Both Integers are equal");
+}
+else if (firstInteger>secondInteger){
+    document.write("First Integer is greater than Second Integer");
+}
+else if (firstInteger<secondInteger){
+    document.write("First Integer is less than Second Integer");
+}
+
+Questin - 3//
+var anumber = +prompt("Enter a Number.....");
+if (anumber>0){
+    document.write("Number is Positive");
+}
+else if (anumber<0){
+    document.write("Number is Negative");
+}
+else if(anumber===0){
+    document.write("Number is Zero");
+}
+
+Questin - 4//
+var checkVowel = prompt("Enter a vowel...."," ");
+checkVowel=checkVowel.toUpperCase();
+if (checkVowel==='A' || checkVowel==='E' || checkVowel==='I' || checkVowel==='O' || checkVowel==='U' ) {
+    document.write("True");
+}
+else {
+    document.write("False");
+}
+
+Questin - 5//
+
+var password1= prompt("Enter Your Password");
+var originalpassword = "Abcd1234";
+if(password1===""){
+alert ("Please enter password");
+var password1= prompt("Enter Your Password");
+}
+else if(password1 === originalpassword){
+   alert( "Correct! The password you entered matches the original password");
+}
+else if(password1 != originalpassword){
+   alert ("Invalid Password");
+}
+
+Questin - 6//
+
+var greeting; 
+var hour = 13; 
+if (hour < 18) { 
+    greeting = "Good day"; 
+}
+    else { 
+greeting = "Good evening"; } 
+alert (greeting); 
+
+Questin - 7//
+
+var inputTime = prompt("Enter Time in 24hours e.g. 7pm=1900.......");
+if (inputTime>=0000 && inputTime<1200){
+    alert("Good Morning");
+}
+else if (inputTime>=1200 && inputTime<1700){
+    alert ("Good Afternoon");
+}
+else if (inputTime>=1200 && inputTime<1700){
+    alert("Good Afternoon");
+}
+else if (inputTime>=1700 && inputTime<2100){
+    alert("Good Evening");
+}
+else if (inputTime>=2100 && inputTime<2359){
+    alert("Good Night");
+}
