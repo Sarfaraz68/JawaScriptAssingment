@@ -1,5 +1,5 @@
 
-// Assignment #1//
+//Assignment #1//
 
 //Question - 1//
 alert("Welcome to my webiste");
@@ -35,7 +35,7 @@ alert(studentName);
 alert(studentAge + " years old");
 alert(studentCourse);
 
-// //Question - 5//
+//Question - 5//
 var pizza = "PIZZA";
 alert(pizza.slice(0,5) +"\n"+ pizza.slice(0,4)+"\n"+ pizza.slice(0,3)+"\n"+ pizza.slice(0,2)+"\n"+ pizza.slice(0,1));
 
@@ -377,18 +377,207 @@ if (genderCheck==="FEMALE"){
     alert("Good Morning Ma'am!");
 }
 
+//Question - 3//
 
+var colorinput = prompt("Enter Colour Red, Yellow or Green........");
+var color1="Red";
+var color2="Yellow";
+var color3="Green";
+if (colorinput.toUpperCase()==='RED'){
+document.write("<table width='500'>");
+    document.write("<tr>");
+        document.write("<td >" + "Signal Color" + "</td>");
+        document.write("<td>" + "Message" + "</td>");
+    document.write("</tr>");
+    document.write("<tr>");
+    document.write("<td>" + color1.fontcolor("red") + "</td>");
+    document.write("<td>" + "Must Stop".fontcolor("red") + "</td>");
+    document.write("</tr>");
+    document.write("</table>")
+}
+if (colorinput.toUpperCase()==='YELLOW'){
+    document.write("<table width='500'>");
+        document.write("<tr>");
+            document.write("<td >" + "Signal Color" + "</td>");
+            document.write("<td>" + "Message" + "</td>");
+        document.write("</tr>");
+        document.write("<tr>");
+        document.write("<td>" + color2.fontcolor("yellow") + "</td>");
+        document.write("<td>" + "Ready to Move".fontcolor("yellow") + "</td>");
+        document.write("</tr>");
+        document.write("</table>")
+    }
+if (colorinput.toUpperCase()==='GREEN'){
+        document.write("<table width='500'>");
+            document.write("<tr>");
+                document.write("<td >" + "Signal Color" + "</td>");
+                document.write("<td>" + "Message" + "</td>");
+            document.write("</tr>");
+            document.write("<tr>");
+            document.write("<td>" + color3.fontcolor("green") + "</td>");
+            document.write("<td>" + "Move Now".fontcolor("green") + "</td>");
+            document.write("</tr>");
+            document.write("</table>")
+        }
 
+//Question - 4//
 
+var remainFuel = +prompt("How much fuel left is in you car.....");
+if (remainFuel<0.25){
+    document.write("Please refill the fuel in your car"+"<br>")
+}
 
+//Question - 5-a//
+var a = 4; 
+if (++a === 5){ 
+    alert("Given condition for variable a is true"); 
+}
+//Result: Alret Message Displayed
 
+//Question - 5-b//
+var b = 82; 
+if (b++ === 83) { 
+    alert("given condition for variable b is true"); 
+} 
+//Result: Alret Message Did Not Display
 
+//Question - 5-c//
+var c = 12; 
+if (c++ === 13){ alert("condition 1 is true"); } 
+if (c === 13){ alert("condition 2 is true"); } 
+if (++c < 14){ alert("condition 3 is true"); } 
+if(c === 14){ alert("condition 4 is true"); } 
+//Result: Condition 2 and 4 are true
 
+//Question - 5-d//
+var materialCost = 20000; 
+var laborCost = 2000; 
+var totalCost = materialCost + laborCost; 
+if (totalCost === laborCost + materialCost) { alert("The cost equals"); } 
+//Result: Alret Message displayed
 
+Question - 5-e//
+if (true){ alert("True"); } 
+if (false){alert("False");} 
+//Result: Alret Message displayed - True
 
+//Question - 5-f//
+if("car" < "cat"){ alert("car is smaller than cat"); } 
+ //Result: Alret Message displayed
 
+Question - 6//
+var marksEnglish = +prompt("English Marks....");
+var marksEnglishOutOf = +prompt("English Marks out of....");
+var marksMathematics = +prompt("Mathematics Marks....");
+var marksMathematicsOutOf = +prompt("Mathematics Marks out of....");
+var marksUrdu = +prompt("Urdu Marks....");
+var marksUrduOutOf = +prompt("Urdu Marks out of....");
 
+var totalObtained = marksEnglish+marksMathematics+marksUrdu;
+var totalOutOf = marksEnglishOutOf+marksMathematicsOutOf+marksUrduOutOf;
+var percentage1=(totalObtained/totalOutOf)*100;
+var remarks;
+var grade;
 
+if(percentage1>=80){
+remarks="Excellent";
+grade="A-One";
+}
+else if (percentage1>=70) {
+        remarks="Good";
+        grade="A";  
+    }
+else if (percentage1>=60) {
+        remarks="You need improvement";
+        grade="B";  
+    }
+else if (percentage1<60) {
+        remarks="Sorry";
+        grade="Fail";  
+}
 
+var HeadingMarksheet = "Marks Sheet";
+document.write(HeadingMarksheet.fontsize(4).bold()+"<br>"+"<br>");
+document.write("Total Marks :"+totalOutOf+"<br>");
+document.write("Marks Obtained :"+totalObtained +"<br>");
+document.write("Percentage :"+percentage1.toFixed(0)+"%"+"<br>");
+document.write("Grade :"+grade+"<br>");
+document.write("Remarks :"+remarks+"<br>");
+que
+//Question #7//
+var randomNumber = Math.random();
+var finalNumber = randomNumber.toFixed(1)*10; 
+var inputNumber = +prompt("Guess a number between 1 and 10....");
+document.write("Guess Game"+"<br>");
+document.write("-----------------"+"<br>");
+if (finalNumber===inputNumber){
+    document.write("Bingo! Correct Answer"+"<br>");
+    document.write("Secret Number was "+finalNumber+"<br>");
+}
+else if ((finalNumber+1===inputNumber)) {
+    document.write("Close enough to correct answer!"+"<br>");
+    document.write("Secret Number was "+finalNumber+"<br>");
+}
+else {
+    document.write("Try Again!"+"<br>");
+    document.write("Secret Number was "+finalNumber+"<br>");
+}
 
+//Question #8//
+var numberEvenOrOdd = +prompt("Enter a number to check it is divisable by 3 or Not "+"<br>");
+numberEvenOrOdd = numberTodivide%2;
+if (numberEvenOrOdd === 0){
+    document.write("Number is Even!")
+}
+else{
+    document.write("Number is Odd")
+}
+
+//Question #9//
+var numberEvenOrOdd = +prompt("Enter a number to check it is divisable by 3 or Not "+"<br>");
+numberEvenOrOdd = numberEvenOrOdd%2;
+if (numberEvenOrOdd === 0){
+    document.write("Number is Even!")
+}
+else{
+     document.write("Number is Odd")
+}
+
+//Question #10//
+
+var temperature1 = +prompt("Enter Temperature.......");
+if (temperature1>40){
+    document.write("It is too hot outside");
+}
+else if (temperature1>30){
+    document.write("The weather today is normal");
+}
+else if (temperature1>20){
+    document.write("Today weather is cool");
+}
+else if (temperature1>10){
+    document.write("OMG! Today's weather is so cool");
+}
+
+//Question #11//
+var numberOne = +prompt("Enter First Number.....");
+var numberTwo = +prompt("Enter Second Nummber....");
+var operation1= prompt("What Operation you wish to perform +,-,/ or %");
+var add1=numberOne+numberTwo;
+var sub1=numberOne-numberTwo;
+var divi1=numberOne/numberTwo;
+var per1=(numberOne/numberTwo)*100;
+var result11;
+if(operation1==="+"){
+    alert("Result is ...."+add1);
+}
+else if(operation1==="-"){
+    alert("Result is ...."+sub1);
+}
+else if(operation1==="/"){
+    alert("Result is ...."+divi1);
+}
+else if(operation1==="%"){
+    alert("Result is ...."+per1+"%");
+}
 
