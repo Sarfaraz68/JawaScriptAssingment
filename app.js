@@ -456,7 +456,7 @@ var totalCost = materialCost + laborCost;
 if (totalCost === laborCost + materialCost) { alert("The cost equals"); } 
 //Result: Alret Message displayed
 
-Question - 5-e//
+// Question - 5-e//
 if (true){ alert("True"); } 
 if (false){alert("False");} 
 //Result: Alret Message displayed - True
@@ -465,7 +465,7 @@ if (false){alert("False");}
 if("car" < "cat"){ alert("car is smaller than cat"); } 
  //Result: Alret Message displayed
 
-Question - 6//
+//Question - 6//
 var marksEnglish = +prompt("English Marks....");
 var marksEnglishOutOf = +prompt("English Marks out of....");
 var marksMathematics = +prompt("Mathematics Marks....");
@@ -581,9 +581,9 @@ else if(operation1==="%"){
     alert("Result is ...."+per1+"%");
 }
 
-Assignment # 12-13//
+// Assignment # 12-13//
 
-Question - 1//
+// Question - 1//
 var singleCharacter = prompt("Enter Single Charachter - Number or String...");
 var valueOfCharacter=singleCharacter.charCodeAt(0);
 if(valueOfCharacter>=65 && valueOfCharacter<=90) { 
@@ -596,7 +596,7 @@ else if (valueOfCharacter>=48 && valueOfCharacter<=57){
     document.write("It is a Number..."+singleCharacter);
 }
 
-Questin - 2//
+// Questin - 2//
 var firstInteger = +prompt("Enter First Integer......");
 var secondInteger = +prompt("Enter Second Integer......");
 
@@ -610,7 +610,7 @@ else if (firstInteger<secondInteger){
     document.write("First Integer is less than Second Integer");
 }
 
-Questin - 3//
+// Questin - 3//
 var anumber = +prompt("Enter a Number.....");
 if (anumber>0){
     document.write("Number is Positive");
@@ -622,7 +622,7 @@ else if(anumber===0){
     document.write("Number is Zero");
 }
 
-Questin - 4//
+// Questin - 4//
 var checkVowel = prompt("Enter a vowel...."," ");
 checkVowel=checkVowel.toUpperCase();
 if (checkVowel==='A' || checkVowel==='E' || checkVowel==='I' || checkVowel==='O' || checkVowel==='U' ) {
@@ -632,7 +632,7 @@ else {
     document.write("False");
 }
 
-Questin - 5//
+// Questin - 5//
 
 var password1= prompt("Enter Your Password");
 var originalpassword = "Abcd1234";
@@ -647,7 +647,7 @@ else if(password1 != originalpassword){
    alert ("Invalid Password");
 }
 
-Questin - 6//
+// Questin - 6//
 
 var greeting; 
 var hour = 13; 
@@ -676,3 +676,248 @@ else if (inputTime>=1700 && inputTime<2100){
 else if (inputTime>=2100 && inputTime<2359){
     alert("Good Night");
 }
+// Assignment #13-15//
+// 1 - empty array using JS literal notation //
+var studentNames = [ ];
+// 2- an empty array using JS object notation //
+    var student = {
+        firstName:"",
+        lastName:"",
+        rollNo:""
+    };
+//3- Declare and initialize a strings array//
+var string1="abcdefgh";
+//4-Declare and initialize a numbers array//
+var numberarray=[1,2,3,4];
+//5-Declare and initialize a boolean array
+var booleanArray=["Ture","False"];
+//6-Declare and initialize a mixed array.
+var mixedArray = ["Asif",25, "Flase"];
+
+//7-Qualifications available in Pakistan
+var qualifications=["SSC","HSC","BCS","BS","BCom","MS","MPhil","PhD"];
+document.write("Qualificatins:".bold()+"<br>"+"<br>");
+document.write("1) "+qualifications[0]+"<br>");
+document.write("2) "+qualifications[1]+"<br>");
+document.write("3) "+qualifications[2]+"<br>");
+document.write("4) "+qualifications[3]+"<br>");
+document.write("5) "+qualifications[4]+"<br>");
+document.write("6) "+qualifications[5]+"<br>");
+document.write("7) "+qualifications[6]+"<br>");
+document.write("8) "+qualifications[7]+"<br>");
+
+// Questoin - 8
+
+var studentNames=["Michael", "John","Tony"];
+var studentMarks=[320,230,480];
+var michaelPer = (studentMarks[0]/500)*100;
+var johnPer = (studentMarks[1]/500)*100;
+var tonyPer = (studentMarks[2]/500)*100;
+document.write("Score of "+studentNames[0]+" is "+studentMarks[0]+". Percentage: "+michaelPer+"%"+"<br>");
+document.write("Score of "+studentNames[1]+" is "+studentMarks[1]+". Percentage: "+johnPer+"%"+"<br>");
+document.write("Score of "+studentNames[2]+" is "+studentMarks[2]+". Percentage: "+tonyPer+"%"+"<br>");
+
+// Questoin - 9
+var colornames = ["Red","Yellow","Blue"];
+alert("List of Colours"+'\n'+colornames);
+var addColorInBegining = prompt("What Colour you wish to add in the begining of the List");
+colornames.splice(0,0,addColorInBegining);
+alert ("New colour added in the begining"+'\n'+colornames);
+var addColorInEnd = prompt("What Colour you wish to add in the end of the List");
+colornames.push(addColorInEnd);
+alert ("New colour added in the end"+'\n'+colornames);
+colornames.unshift("Mustered","Olive");
+alert ("Two new colours have been added in the Begining"+'\n'+colornames);
+colornames.shift();
+alert ("First colour in the list have been removed"+'\n'+colornames);
+colornames.pop();
+alert ("Last colour in the list have been removed"+'\n'+colornames);
+var whatColor = prompt("What Colour you wish to add"+'\n'+colornames);
+var addOnIndex = +prompt("At what index Number"+'\n'+colornames);
+colornames.splice(addOnIndex,0,whatColor);
+alert ("Colour has been added to desired location"+'\n'+colornames);
+var howManyColor = prompt("How many colour you wish to erase from the list"+'\n'+colornames);
+var deleteFromList = +prompt("From which index Number"+'\n'+colornames);
+colornames.splice(deleteFromList,howManyColor);
+alert ("Colour(s) has been removed to desired location"+'\n'+colornames);
+
+// Questoin - 10
+
+var studentscore = [320,230,480,120];
+alert("Score of Students: "+studentscore+'\n'+"Ordered Score of Students: "+studentscore.sort());
+
+// Questoin - 11
+var citiesList = ["Karachi", "Lahore", "Islamabad","Quetta","Peshawar"];
+var selectedcities = citiesList.slice(2,4);
+alert("Cities List:"+'\n'+citiesList+'\n'+"Selected Cities:"+'\n'+selectedcities);
+
+// Questoin - 12
+var arrayjoin = ["This","is","my","cat"];
+var arrayjoin1=arrayjoin.join(" ");
+alert(arrayjoin+'\n'+arrayjoin1);
+
+// Question - 13
+
+var fifoarray=["Keyboard","Mouse","Printer","Monitor"];
+document.write("Devices:"+"<br>");
+document.write(fifoarray+"<br>");
+document.write("Out:"+"<br>");
+document.write(fifoarray[0]+"<br>");
+document.write("Out:"+"<br>");
+document.write(fifoarray[1]+"<br>");
+document.write("Out:"+"<br>");
+document.write(fifoarray[2]+"<br>");
+document.write("Out:"+"<br>");
+document.write(fifoarray[3]+"<br>");
+
+//Question - 14
+
+var fifoarray=["Keyboard","Mouse","Printer","Monitor"];
+document.write("Devices:"+"<br>");
+document.write(fifoarray+"<br>");
+document.write("Out:"+"<br>");
+document.write(fifoarray[3]+"<br>");
+document.write("Out:"+"<br>");
+document.write(fifoarray[2]+"<br>");
+document.write("Out:"+"<br>");
+document.write(fifoarray[1]+"<br>");
+document.write("Out:"+"<br>");
+document.write(fifoarray[0]+"<br>");
+
+//Question - 15
+var phonCompanies=  ["Apple", "Samsung", "Motorola", "Nokia", "Sony","Haier"];
+document.write(phonCompanies);
+
+// Assignment # 17-20 
+
+//Question - 1
+var arrayOfArrays=[["Amir", "Kashif", "Nasir", "Raza"],[30,25,29,27],[20000,10000,35000,15000]];
+
+//Question - 2
+var multiArray=[[0,1,2,3],[1,0,1,2],[2,1,0,1]];
+alert(multiArray[0]+'\n'+multiArray[1]+'\n'+multiArray[2]);
+
+//Question - 3
+var counting = 1;
+for (counting; counting<=10; counting++ )
+{
+    document.write(counting+'<br>');
+}
+
+//Question - 4
+var tableOf = +prompt("Enter a number to show its multiplication table");
+var lengthOfTable = +prompt("Enter the length of multiplicatin table");
+var startingNumber=1;
+document.write("Multiplication Table Of "+tableOf+"<br>");
+document.write("Length "+lengthOfTable+"<br>"+"<br>");
+for (startingNumber; startingNumber<=lengthOfTable; startingNumber++ )
+{
+    document.write(tableOf+"X"+startingNumber+"="+(startingNumber*tableOf)+'<br>');
+}
+
+//Question - 5
+fruits = ["Apple", "Banana", "Mango", "Orange", "Strawberry"];
+var arrayLength = fruits.length;
+
+for (a=0; a<=arrayLength-1; a++){
+    
+    document.write(fruits[a]+"<br>");
+}
+document.write("<br>"+"<br>"+"<br>"+"<br>");
+for (a=0; a<=arrayLength-1; a++){
+    
+    document.write("Element at Index"+a+" is "+fruits[a]+"<br>");
+}
+
+//Question - 6
+// 6. Generate the following series in your browser. See example output. 
+ 
+// a. Counting: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 
+var counting=1;
+document.write("Counting:"+"<br>"+"<br>");
+for (counting; counting<=15; counting++){
+    document.write(counting+", ");
+}
+//// b. Reverse counting: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+var reversCounting=10;
+document.write("<br>"+"<br>"+"Reverse Counting:"+"<br>"+"<br>");
+for (reversCounting; reversCounting>=1; reversCounting--){
+    document.write(reversCounting+", ");
+}
+// c. Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 
+var counting=0;
+document.write("<br>"+"<br>"+"Even:"+"<br>"+"<br>");
+for (counting; counting<=20; counting++){
+    if(counting%2===0){
+    document.write(counting+", ");
+}
+}
+// d. Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
+var counting=0;
+document.write("<br>"+"<br>"+"Odd:"+"<br>"+"<br>");
+for (counting; counting<=20; counting++){
+    if(counting%2>0){
+    document.write(counting+", ");
+}
+}
+// e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k 
+var counting=1;
+document.write("<br>"+"<br>"+"Series:"+"<br>"+"<br>");
+for (counting; counting<=20; counting++){
+    if(counting%2===0){
+    document.write(counting+"k"+", ");
+}
+}
+
+//Question - 7
+var bakeryItems = ["cake", "apple pie", "cookie", "chips", "patties"];
+var checkItem = prompt("Welcome to ABC Bakery! What would you like to order");
+checkItem=checkItem.toLocaleLowerCase();
+var lengthOfItems = bakeryItems.length;
+
+for (lengthOfItems; lengthOfItems>=0; lengthOfItems--){
+    if (checkItem===bakeryItems[lengthOfItems]){
+        alert("Cookies is available at index "+lengthOfItems+" in our Bakery");
+            break;
+        
+    }
+    else if (lengthOfItems===0) 
+    {
+        alert("Sorry "+checkItem+" is not available in our Bakery");
+     
+        
+    }   
+    }
+
+    // Q8 - Find Largest Number
+    var largestNumber = [24, 53, 78, 91, 12];
+    var arrayLength = largestNumber.length;
+    var largestN=0;
+
+    for (arrayLength; arrayLength>=0; arrayLength--) {
+        if (largestN<largestNumber[arrayLength-1]){
+            largestN=largestNumber[arrayLength-1];
+        }
+        
+    }
+    alert("Array items:"+largestNumber+"\n"+"Largest Number in the Array is "+ largestN);
+    
+ //Q9 - Find Smallest Number
+     var smallestNumber = [24, 53, 78, 91, 12];
+     var arrayLength = smallestNumber.length;
+     var smallN=smallestNumber[0];
+
+     for (arrayLength; arrayLength>=0; arrayLength--) {
+         if (smallN>smallestNumber[arrayLength-1]){
+             smallN=smallestNumber[arrayLength-1];
+         }
+        
+     }
+     alert("Array items:"+smallestNumber+"\n"+"Smallest Number in the Array is "+ smallN);
+
+//Q10 - Muliples of 5
+     var fiveNumber = 5;
+ for(fiveNumber; fiveNumber<=100; fiveNumber=fiveNumber+5){
+     document.write(fiveNumber+",");
+ }
+
